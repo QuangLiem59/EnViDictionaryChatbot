@@ -1,0 +1,127 @@
+version: "3.1"
+
+intents:
+  - address
+  - affirm
+  - ask_author
+  - ask_love
+  - ask_relationship
+  - comedy_story
+  - deny
+  - gender
+  - goodbye
+  - goodnight
+  - greet
+  - help
+  - how_are_u
+  - how_old
+  - introduce
+  - lookUp_english
+  - mood_great
+  - mood_unhappy
+  - scold
+  - sing_poem
+  - suprise
+  - thanks
+  - wat_name
+  - bot_challenge
+
+entities:
+  - enword
+
+slots:
+  enword:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: enword
+
+responses:
+  utter_hello:
+    - text: "😼Xin chào!"
+  utter_greet:
+    - text: "Hôm nay bạn cần hỗ trợ gì?"
+  utter_happy:
+    - text: "Rất vui khi bạn cảm thấy như vậy!"
+  utter_cheer_up:
+    - text: "Mọi chuyện sẽ ổn thôi. Bạn muốn tôi làm gì để giúp không?"
+  utter_did_that_help:
+    - text: "Hy vọng điều đó hữu ích!"
+  utter_goodbye:
+    - text: "Chúc bạn một ngày tốt lành! Tạm biệt!"
+  utter_default:
+    - text: "Tôi chưa hiểu ý bạn, hãy thử diễn đạt lại nhé."
+  utter_nothing:
+    - text: "Không có chi!"
+  utter_nextwork:
+    - text: "Tôi có thể hỗ trợ gì tiếp theo không?"
+  utter_introduce:
+    - text: "Tôi là một trợ lý ảo, có thể giúp bạn tra cứu tiếng Anh💦."
+  utter_thanks:
+    - text: "Cảm ơn bạn!"
+  utter_goodnight:
+    - text: "Chúc bạn ngủ ngon!"
+  utter_author:
+    - text: "Tôi được tạo ra bởi người phát triển của tôi."
+  utter_reply_help:
+    - text: "Bạn cần tôi giúp gì nào?"
+  utter_suprise:
+    - text: "🤯🤯🤯"
+  utter_reply_love:
+    - text: "Cảm ơn vì đã thích tôi🙃!"
+  utter_wat_name:
+    - text: "Tôi tên là UwU🤡😼!"
+  utter_how_old:
+    - text: "Tôi luôn trẻ mãi không già!"
+  utter_gender:
+    - text: "Tôi không có giới tính cụ thể."
+  utter_address:
+    - text: "Trong tim bạn!"
+  utter_how_are_u:
+    - text: "Tôi rất ổn! Còn bạn thì sao?"
+  utter_sing_poem:
+    - text: "Tôi chịu! Bạn hát cho tôi nghe đi🙉!"
+  utter_comedy_story:
+    - text: "Không thích😼."
+  utter_scold:
+    - text: "Tôi sẽ cố gắng cải thiện để không làm bạn buồn."
+  utter_hurt:
+    - text: "Tôi không có ý làm tổn thương bạn."
+  utter_reply_relationship:
+    - text: "Tôi không có người yêu đâu!"
+  utter_iamabot:
+    - text: "Tôi là một trợ lý ảo được thiết kế để hỗ trợ bạn tra cứu tiếng Anh."
+
+actions:
+  - action_lookUp_en
+  - utter_hello
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_default
+  - utter_nextwork
+  - utter_nothing
+  - utter_goodnight
+  - utter_thanks
+  - utter_author
+  - utter_introduce
+  - utter_reply_relationship
+  - utter_reply_help
+  - utter_reply_love
+  - utter_suprise
+  - utter_how_are_u
+  - utter_wat_name
+  - utter_sing_poem
+  - utter_comedy_story
+  - utter_address
+  - utter_gender
+  - utter_how_old
+  - utter_scold
+  - utter_hurt
+  - utter_iamabot
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

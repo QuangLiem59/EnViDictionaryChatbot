@@ -1,0 +1,239 @@
+version: "3.1"
+
+nlu:
+- intent: lookUp_english
+  examples: |
+    - tôi cần tra nghĩa từ [happy](enword)
+    - tôi cần tra từ [avoid](enword)
+    - tra từ [consider](enword)
+    - tra từ tiếng anh [hello](enword)
+    - từ điển tiếng anh [address](enword)
+    - dịch từ tiếng anh [sarrow](enword)
+    - dịch từ [afternoon](enword)
+    - [beautiful](enword) nghĩa là gì
+    - [handsome](enword) nghĩa tiếng việt là gì
+    - tôi cần tra từ [happy](enword)
+    - tra nghĩa của từ [happy](enword)
+    - [happy](enword) la gi
+    - [happy](enword) là gì
+    - tra tu [happy](enword)
+
+- intent: address
+  examples: |
+    - nhà bạn ở đâu
+    - bạn ở đâu
+    - bạn ở chỗ nào
+    - bạn ở nhà nào
+    - địa chỉ nhà bạn chỗ nào
+    - địa chỉ nhà bạn ở đâu
+    - bạn sinh ra ở đâu
+
+- intent: affirm
+  examples: |
+    - vâng
+    - được rồi
+    - tất nhiên
+    - nghe hay đó
+    - chính xác
+    - ok
+    - okay
+
+- intent: ask_author
+  examples: |
+    - ai là người tạo ra bạn
+    - ai đẻ ra bạn
+
+- intent: ask_love
+  examples: |
+    - bạn có yêu tôi không
+    - tôi làm người yêu bạn được không
+    - tôi làm bạn của bạn được không
+    - tôi thích bạn được không
+    - tôi thích bạn
+
+- intent: ask_relationship
+  examples: |
+    - bạn có người yêu chưa
+    - bạn có bạn không
+    - bạn có thích ai không
+    - bạn có yêu ai không
+
+- intent: comedy_story
+  examples: |
+    - bạn biết kể chuyện không
+    - kể chuyện cho mình nghe đi
+
+- intent: deny
+  examples: |
+    - không
+    - no
+    - k
+    - kh
+    - hong
+    - không á
+    - không nhé
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - đừng như vậy chứ
+    - không đời nào
+    - hoàn toàn không
+
+- intent: gender
+  examples: |
+    - bạn là nam hay nữ
+    - bạn giới tính là gì
+    - bạn thích nam hay nữ
+    - bạn là trai hay gái
+    - bạn thích trai hay gái
+    - bạn là nam hả
+    - bạn là con trai hay con gái
+    - bạn là gái hả
+    - bạn là đàn ông hay phụ nữ
+    - bạn có phải là đàn ông không
+    - bạn có phải là gay không
+    - bạn có phải là les không
+
+- intent: goodbye
+  examples: |
+    - bye
+    - bye bye
+    - tạm biệt
+    - hẹn gặp lại
+    - gặp lại sau
+    - lúc khác gặp lại
+
+- intent: goodnight
+  examples: |
+    - chúc ngủ ngon
+    - chúc bạn ngủ ngon
+    - ngủ ngon nha
+    - ngủ ngon
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - này
+    - xin chào
+    - chào
+    - chào buổi sáng
+    - chào buổi tối
+    - chào buổi chiều
+
+- intent: help
+  examples: |
+    - cứu với
+    - giúp tôi
+    - giúp với
+    - cứu
+
+- intent: how_are_u
+  examples: |
+    - bạn có khỏe không
+    - dạo này bạn thế nào
+    - bạn sao rồi
+
+- intent: how_old
+  examples: |
+    - bạn mấy tuổi rồi
+    - bạn nhiêu tuổi thế
+    - bạn sinh năm bao nhiêu
+    - bạn học lớp mấy rồi
+    - bạn học cấp mấy
+
+- intent: introduce
+  examples: |
+    - bạn có thể làm gì nào
+    - kiểm tra
+    - bạn có thể giúp gì cho tôi
+    - bạn biết làm gì
+    - bạn được việc không
+
+- intent: mood_great
+  examples: |
+    - tuyệt vời
+    - rất tốt
+    - tuyệt
+    - đáng kinh ngạc
+    - hoàn hảo
+    - tôi cảm thấy rất tuyệt
+    - tôi rất khỏe
+    - tôi rất tốt
+
+- intent: mood_unhappy
+  examples: |
+    - buồn ghê
+    - quá buồn
+    - quá chán
+    - tệ
+    - rất tệ
+    - tồi tệ
+    - kinh khủng
+    - không ổn lắm
+    - cực kỳ chán
+    - cực kỳ buồn
+    - tôi buồn
+    - huhu
+
+- intent: scold
+  examples: |
+    - khùng quá
+    - điên quá
+    - chập mạch
+    - hâm quá
+    - mất dạy
+    - vô học
+    - bạn bị ngu hả
+    - thần kinh
+    - ngáo quá
+
+- intent: sing_poem
+  examples: |
+    - bạn biết hát không
+    - hát cho mình nghe đi
+    - đọc thơ đi bạn
+    - đọc thơ cho mình nghe
+    - bạn biết đọc thơ không
+    - hát đi bạn
+
+- intent: suprise
+  examples: |
+    - ôi trời
+    - trời ơi
+    - quao
+    - wow
+
+- intent: thanks
+  examples: |
+    - cảm ơn nhiều
+    - cảm ơn nhé
+    - cảm ơn nha
+    - cảm ơn
+    - cảm ơn rất nhiều
+    - cảm ơn bạn
+    - cảm ơn bạn nhiều
+    - cảm ơn bạn nhé
+    - cảm ơn bạn nha
+    - cảm ơn bạn rất nhiều
+    - thank
+    - thank you
+    - thanks
+    - ty
+
+- intent: wat_name
+  examples: |
+    - bạn tên gì thế
+    - tên của bạn là gì
+    - bạn tên gì
+
+- intent: bot_challenge
+  examples: |
+    - bạn là bot à
+    - bạn là bot phải không
+    - bạn là bot đúng không
+    - bạn là bot đúng không vậy
+    - bạn là bot đúng không nào
+
+- lookup: enword
+  examples: |
+    - ./englishword.txt
